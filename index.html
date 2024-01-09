@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="
+https://cdn.jsdelivr.net/npm/preline@2.0.2/dist/preline.min.js
+"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsve Navbar - Tailwind-Css</title>
+</head>
+
+<body class="bg-[url(image.ai.jpg)] bg-cover bg-center text-black bg-no-repeat">
+    <header class="bg-[#ffffff50]">
+        <nav class="flex items-center justify-between px-12 h-16 lg:gap-12 ">
+
+            <a href="#" class=""><img
+                    src="https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo-thumbnail.png" alt=""
+                    class="h-[25px]"></a>
+
+            <div
+                class=" dropdown-menu absolute -top-full left-0 max-lg:bg-[#07060650] w-full flex flex-col gap-6 items-center py-2 text-lg font-bold lg:static lg:flex-row justify-between">
+                <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8 lg:mx-auto">
+                    <li class="hover:text-orange-400 cursor-pointer">Home</li>
+                    <li class="hover:text-orange-400 cursor-pointer">Tailwind Css</li>
+                    <li class="hover:text-orange-400 cursor-pointer">Videos</li>
+                    <li class="hover:text-orange-400 cursor-pointer">Blogs</li>
+                    <li class="hover:text-orange-400 cursor-pointer">Courses</li>
+                </ul>
+                <div class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+                    <button class="hover:text-orange-400 cursor-pointer">Login</button>
+                    <button class="bg-orange-400 px-2 py-1 rounded-lg hover:bg-orange-700">Sign up</button>
+                </div>
+            </div>
+            <div class="toggle-button lg:hidden">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Slider -->
+<div data-hs-carousel='{
+    "loadingClasses": "opacity-0",
+    "isAutoPlay": true
+  }' class="relative my-[370px]">
+  <div class="hs-carousel relative overflow-hidden w-full min-h-[450px] ">
+    <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full  p-6">
+          <span class="self-center transition duration-700"><img src="https://source.unsplash.com/weekly?nautre+water" alt="" class="w-screen h-screen object-cover"></span>
+        </div>
+      </div>
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full  p-6">
+          <span class="self-center  transition duration-700"><img src="https://source.unsplash.com/weekly?coder+technology" alt="" class="w-screen h-screen object-cover"></span>
+        </div>
+      </div>
+      <div class="hs-carousel-slide">
+        <div class="flex justify-center h-full  p-6">
+          <span class="self-center  transition duration-700"><img src="https://source.unsplash.com/weekly?gamer+graphics" alt="" class="w-screen h-screen object-cover"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-950/[.1]">
+    <span class="text-2xl" aria-hidden="true">
+      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+      </svg>
+    </span>
+    <span class="sr-only">Previous</span>
+  </button>
+
+  <button type="button" class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-950/[.1]">
+    <span class="sr-only">Next</span>
+    <span class="text-2xl" aria-hidden="true">
+      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </span>
+  </button>
+
+  <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
+    <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+    <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+    <span class="hs-carousel-active:bg-blue-700 hs-carousel-active:border-blue-700 w-3 h-3 border border-gray-400 rounded-full cursor-pointer"></span>
+  </div>
+</div>
+<div class="py-5">
+
+</div>
+<!-- End Slider -->
+</section>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle-button");
+        const dropdown = document.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", () => {
+            dropdown.classList.toggle('top-16');
+        })
+    </script>
+</body>
+
+</html>
